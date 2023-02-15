@@ -1,4 +1,6 @@
 import React from 'react'
+import HeaderLoginButtons from './components/HeaderLoginButtons/HeaderLoginButtons'
+import HeaderMenuItem from './components/HeaderMenuItem/HeaderMenuItem'
 import './Header.css'
 
 let menuItems = [
@@ -9,13 +11,6 @@ let menuItems = [
 ]
 
 function Header() {
-  function HeaderMenuItem({text, key}) {
-    return (
-      <div className="header_item" key={key}>
-        <span className="header_item_text">{text}</span>
-      </div>
-    )
-  }
   return (
     <div className="header">
       <div className="header_logo">
@@ -24,10 +19,7 @@ function Header() {
       <div className="header_menu">
         {menuItems.map((item, index) => HeaderMenuItem({icon: item.icon, text: item.text, key: index}))}
       </div>
-      <div className='header_login_group'>
-        <button className="header_signup_button">Sign Up</button>
-        <button className="header_login_button">Login</button>
-      </div>
+      <HeaderLoginButtons />
     </div>
   )
 }
