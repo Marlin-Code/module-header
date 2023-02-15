@@ -1,0 +1,90 @@
+.header {
+    --fontsize: 24px;
+    --background-color: #454a4f;
+    --shadow-color: rgba(0, 4, 32, 0.4);
+    --hover-color: #343a40;
+    --contrast-color: #e5f2fe;
+    display: flex;
+    gap: 128px;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: calc(100vw - 32px);
+    padding: 0px 16px;
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 16px 0px var(--shadow-color);
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 100%;
+}
+
+.header_login_group {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    color: var(--contrast-color);
+    cursor: pointer;}
+
+.header_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    color: var(--contrast-color);
+    cursor: pointer;
+}
+.header_menu > .header_item:hover {
+    background-color: var(--hover-color);
+}
+
+.header_item_text {
+    font-size: var(--fontsize);
+    color: var(--contrast-color);
+}
+.header_logo_text {
+    font-size: var(--fontsize);
+    color: var(--contrast-color);
+}
+
+.header_login_group {
+    --login-color: #325fff;
+    --login-white: #fafbff;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header_login_button {
+    height: 36px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--login-color);
+    color: var(--login-white);
+    border: 1px solid var(--login-color);
+    border-radius: 16px;
+    box-shadow: 0px 2px 32px -2px black;
+}
+
+.header_signup_button {
+    height: 36px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--login-white);
+    color: var(--login-color);
+    border: 1px solid var(--login-color);
+    border-radius: 16px;
+    box-shadow: 0px 2px 32px -2px black;
+}
