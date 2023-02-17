@@ -1,0 +1,41 @@
+.header {
+    --fontsize: 24px;
+    --background-color: #454a4f;
+    --shadow-color: rgba(0, 4, 32, 0.4);
+    --hover-color: #343a40;
+    --contrast-color: #e5f2fe;
+    display: flex;
+    gap: 128px;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: calc(100vw - 32px);
+    padding: 0px 16px;
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 16px 0px var(--shadow-color);
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 100%;
+}
+
+.header_login_group {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    color: var(--contrast-color);
+    cursor: pointer;}
+
+.header_logo_text {
+    font-size: var(--fontsize);
+    color: var(--contrast-color);
+}
